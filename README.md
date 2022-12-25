@@ -32,3 +32,11 @@ we are repeatedly creating constants, reducer, actions, saga whenever we want to
 We are doing the same thing again and again that will make most of the developers feel disconnected from coding.
 To avoid that, we have created a Hoc for you to handle those repeated things.
 https://github.com/cartoonmangodev/react-boilerplate-redux-saga-hoc - Learn More
+
+**Scaffolding - Instructions**
+*** Clone the Repo ***
+>git clone https://github.com/Karthick0397/react-vite-scaffolding.git
+*** Install Dependencies ***
+>Yarn install
+*** Start Server ***
+>Yarn dev
