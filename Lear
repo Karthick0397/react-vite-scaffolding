@@ -1,0 +1,34 @@
+Vite - React Js Scaffolding with React Boilerplate Redux Saga HOC 
+It is currently used for internal purpose only.
+React Vite Scaffolding with swc
+React Boilerplate Redux Saga HOC is a hoc for handling api calls as well as mataintaing redux state.
+
+#Why do we use Vite?
+
+Vite is a modern JavaScript-based development tool for building web applications. 
+It is an alternative to traditional bundlers such as Webpack and Rollup, and offers a more intuitive and faster experience for developing modern web applications. 
+It uses a “zero-config” approach, meaning that developers don’t need to configure complex settings to get started. 
+Instead, Vite takes care of the setup for you and provides you with a development server that hot-reloads your code as you write it.
+
+The main advantages of using Vite over traditional bundlers are speed and simplicity.
+Vite is significantly faster than other bundlers, and allows developers to quickly get up and running with their project. 
+It also comes with default presets and settings, so developers don’t need to spend time and effort configuring their project everytime they start a new project.
+
+Vite also provides a number of other useful features, such as tree-shaking and code-splitting, which can help improve the performance of web applications.
+In addition, Vite is designed to work with modern libraries and frameworks, such as React, Vue, and Svelte, which makes it a great choice for developers who are looking to build modern, full
+
+#Who can use this Scaffolding?
+
+A person who wants to do development faster and also doesn't want to create constants, reducer, saga, actions repeatedly.
+
+#Why do we need this?
+
+Instant Server Start
+Lighting Fast HMR
+Optimized Build
+
+#Why SWC?
+
+SWC can be used for both compilation and bundling. For compilation, 
+it takes JavaScript / TypeScript files using modern JavaScript features and outputs valid code that is supported by all major browsers. 
+SWC is 20x faster than Babel on a single thread and 70x faster on four cores.
