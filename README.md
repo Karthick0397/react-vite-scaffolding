@@ -34,9 +34,12 @@ To avoid that, we have created a Hoc for you to handle those repeated things.
 https://github.com/cartoonmangodev/react-boilerplate-redux-saga-hoc - Learn More
 
 **Scaffolding - Instructions**
+
 *** Clone the Repo ***
-git clone https://github.com/Karthick0397/react-vite-scaffolding.git
+>git clone https://github.com/Karthick0397/react-vite-scaffolding.git
+
 *** Install Dependencies ***
-Yarn install
+>yarn install
+
 *** Start Server ***
-Yarn dev
+>yarn dev
