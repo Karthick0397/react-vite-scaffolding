@@ -1,21 +1,21 @@
-import React from "react"
-import { useState } from "react"
-import reactLogo from "./assets/react.svg"
-import "./App.css"
-import { FeRouteConfig, RoutesContainer, UiRouteConfig } from "./Shared/Routes"
+import React from "react";
+import { useState } from "react";
+import reactLogo from "./assets/react.svg";
+import "./App.css";
+import { FeRouteConfig, RoutesContainer, UiRouteConfig } from "./Shared/Routes";
 // import GlobalStyle from "./global-styles"
-import { useDashboardHoc, useQuery, newObject } from "./Shared/hoc"
-const token = localStorage.getItem("token")
+import { useDashboardHoc, useQuery, newObject } from "./Shared/hoc";
+const token = localStorage.getItem("token");
 function App(props) {
-  const [authorization, setAuthorization] = useState(false)
+  const [authorization, setAuthorization] = useState(false);
   const {
     reducerName,
     axios,
     actions: { GET_USER_PROFILE_API_CALL },
-  } = useDashboardHoc()
+  } = useDashboardHoc();
   const { isLoggedIn } = useQuery(reducerName, {
     requiredKey: ["isLoggedIn"],
-  })
+  });
   React.useEffect(() => {
     if (token) {
       // axios.defaults.headers.common.Authorization = `Bearer ${token}`
@@ -24,17 +24,17 @@ function App(props) {
           updateStateCallback: ({ state, data }) =>
             newObject(state, { profile: data, isLoggedIn: true }),
           finalCallback: () => {
-            setAuthorization(true)
+            setAuthorization(true);
           },
           errorCallback: () => {
-            delete axios.defaults.headers.common.Authorization
+            delete axios.defaults.headers.common.Authorization;
           },
         },
-      })
+      });
     } else {
-      setAuthorization(true)
+      setAuthorization(true);
     }
-  }, [])
+  }, []);
   return (
     <div>
       {authorization ? (
@@ -50,8 +50,7 @@ function App(props) {
       )}
       {/* <GlobalStyle /> */}
     </div>
-  )
+  );
 }
 
-export default App
-
+export default App;

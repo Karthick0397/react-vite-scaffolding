@@ -2,10 +2,9 @@
 
 // import HomePage from 'containers/HomePage/Loadable';
 // import NotFoundPage from "containers/NotFoundPage/Loadable"
-import HomePage from "../../containers/Home/HomePage"
-// import { LANDING_PAGE } from './routeConstants';
+import HomePage from "../../containers/Home/HomePage";
 
-const ENABLE_AUTH = true
+const ENABLE_AUTH = true;
 // const ENABLE_RESTRICT_ROUTE = true;
 // const ENABLE_LOGIN_REDIRECT = true;
 // const ELSE = undefined;
@@ -23,7 +22,7 @@ export default [
   //   exact: true,
   //   component: NotFoundPage,
   // },
-]
+];
 
 /* reference - Please don't remove 
 
@@ -66,4 +65,3 @@ export default [
   }
 
   */
-
